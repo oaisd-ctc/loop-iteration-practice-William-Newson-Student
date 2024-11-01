@@ -3,15 +3,48 @@ public static class Program
 {    
     public static void Main()
     {
-        // Write1ThroughN_While(0); // good
-        // Write1ThroughN_For(-1); // good
-        // WriteNThrough1_While(-1); // good
-        // WriteNThrough1_For(-1); // good
+        Write1ThroughN_While(-1);
+        Write1ThroughN_While(5);
+        Write1ThroughN_While(0);
 
-        // WriteEvensThrough100(); // good
-        // FindSum(-3); // good
-        // FindSumOfEvenNumbers(25); // good
-        // FindSumOfOddNumbers(-25); // good
+        Write1ThroughN_For(-1);
+        Write1ThroughN_For(5);
+        Write1ThroughN_For(0);
+        
+        WriteNThrough1_While(-1);
+        WriteNThrough1_While(5);
+        WriteNThrough1_While(0);
+        
+        WriteNThrough1_For(-1);
+        WriteNThrough1_For(5);
+        WriteNThrough1_For(0);
+
+        WriteEvensThrough100();
+
+        FindSum(5);
+        FindSum(1);
+        FindSum(-3);
+        FindSum(100);
+
+        FindSumOfEvenNumbers(10);
+        FindSumOfEvenNumbers(-5);
+        FindSumOfEvenNumbers(2);
+        FindSumOfEvenNumbers(0);
+        FindSumOfEvenNumbers(1);
+        FindSumOfEvenNumbers(25);
+        FindSumOfEvenNumbers(-25);
+        
+        FindSumOfOddNumbers(10);
+        FindSumOfOddNumbers(-5);
+        FindSumOfOddNumbers(1);
+        FindSumOfOddNumbers(2);
+        FindSumOfOddNumbers(25);
+        FindSumOfOddNumbers(-25);
+
+        OutputRightTriangle(4);
+        OutputRightTriangle(6);
+        OutputRightTriangle(-4);
+        OutputRightTriangle(-6);
         OutputRightTriangle(0);
     }
     public static void Write1ThroughN_While(int n)
